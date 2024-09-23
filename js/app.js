@@ -146,3 +146,34 @@ donateMoneyBtn1.addEventListener('click', () => {
 
     document.getElementById('my_modal').showModal();
 });
+
+
+// Donate Money button - 2
+donateMoneyBtn2.addEventListener('click', () => {
+    const amountString = donateMoneyInputField2.value;
+    const amount = parseFloat(donateMoneyInputField2.value);
+    let myMoney = parseFloat(myTotalMoney.innerText);
+
+    if(!inputFieldValidation(amount, amountString)) {
+        alert('Please enter a valid amount');
+        return;
+    }
+
+    if(!moneyValidation(amount, myMoney)) {
+        alert('Insufficient funds');
+        return;
+    }
+
+    const donateTitle = getDonateTtile(donateMoneyBtn2);
+
+    myMoney -= amount;   
+
+    const newDonateAmount = calculateNewAmount(amount, donateMoney2);
+    
+    calculateDonation(donateMoney2, newDonateAmount, myTotalMoney, myMoney, donateMoneyInputField2);
+    updateHistory(amount, donateTitle);
+
+    document.getElementById('my_modal').showModal();
+});
+
+
