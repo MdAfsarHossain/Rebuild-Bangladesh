@@ -74,5 +74,41 @@
         </nav>
       </div>
     </header>
+
+    <!-- Main -->
+    <main class="px-5 lg:px-10 py-36">
+      <!-- Question - 1 -->
+      <div class="border-2 rounded-lg px-5 py-5 shadow-xl mb-10">
+        <h1 class="font-bold text-3xl mb-2">
+          1. What is the Document Object Model (DOM)?
+        </h1>
+        <p>
+          The Document Object Model (DOM), a programming interface for web
+          pages, shows how HTML or XML content is arranged in a tree-like
+          manner. It allows programmers to dynamically access, modify, and
+          update webpage elements using languages such as JavaScript. It is easy
+          to make real-time changes to content, styles, or attributes with this
+          tree since it represents each element, property, and text segment in
+          the document as an object without requiring a page reload.
+        </p>
+        <!-- Code -->
+        <div class="mockup-code mt-5">
+          <pre data-prefix="">
+          <code>
+          &lt;p id="demo"&gt;Hello, World!&lt;/p&gt;
+          &lt;button onclick=&quot;changeText()&quot;&gt;Change Text&lt;/button&gt;
+          </code></pre>
+        </div>
+        <div class="mockup-code mt-5">
+          <pre data-prefix="">
+          <code>
+            function changeText() {
+              let element = document.getElementById("demo");
+              element.innerHTML = "Hello, DOM!";
+          }          
+          </code></pre>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
