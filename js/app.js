@@ -33,9 +33,20 @@ function buttonClassesAddRemove(addButton, removeButton) {
 
 // Donation button
 donationBtn.addEventListener('click', () => {
-      
+
     buttonClassesAddRemove(donationBtn, historyBtn);
     donationCardContainer.classList.remove('hidden');
     historyCardContainer.classList.add('hidden');
     historyCardContainer.classList.remove('flex');
+});
+
+
+// History button
+historyBtn.addEventListener('click', () => {
+    buttonClassesAddRemove(historyBtn, donationBtn);
+  
+    donationCardContainer.classList.add('hidden');
+    historyCardContainer.classList.add('flex');
+    historyCardContainer.classList.remove('hidden');
+  
 });
