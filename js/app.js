@@ -65,3 +65,12 @@ function inputFieldValidation(amount, amountString) {
     }
     return false;
 }
+
+
+// Money Validation functionality
+function moneyValidation(amount, myMoney){
+    if(amount > myMoney) {
+        return false;
+     }
+    return true; 
+}
