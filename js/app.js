@@ -19,3 +19,13 @@ const donateMoneyBtn2 = document.getElementById('donateMoneyButton2');
 const donateMoney3 = document.getElementById('donateMoney3');
 const donateMoneyInputField3 = document.getElementById('donateMoneyInput3');
 const donateMoneyBtn3 = document.getElementById('donateMoneyButton3');
+
+
+// Add and remove buttons classes functionality
+function buttonClassesAddRemove(addButton, removeButton) {
+    addButton.classList.add('bg-[#B4F461]', 'text-black');
+    addButton.classList.remove('text-gray-600', 'border-2');
+
+    removeButton.classList.remove('bg-[#B4F461]', 'text-black');
+    removeButton.classList.add('text-gray-600', 'border-2');
+}
