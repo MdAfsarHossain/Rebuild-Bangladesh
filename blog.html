@@ -29,5 +29,50 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body></body>
+  <body>
+    <!-- Header  -->
+    <header class="fixed w-full shadow-md z-10">
+      <!-- Navbar -->
+      <div class="bg-[#F9F7F3] py-5">
+        <nav class="flex flex-row justify-between items-center px-10">
+          <!-- Start -->
+          <a
+            href="/"
+            class="btn bg-[#B4F461] text-black text-xl font-bold rounded border-[#B4F461] border-2 hover:bg-transparent hover:border-2 hover:border-[#B4F461] px-6"
+          >
+            Home
+          </a>
+
+          <!-- Center -->
+          <div class="flex flex-row justify-center items-center gap-5">
+            <img src="./images/logo.png" alt="" />
+            <h1 class="font-bold text-3xl hidden md:block">
+              Rebuild Bangladesh
+            </h1>
+          </div>
+
+          <!-- End -->
+          <div class="flex flex-row justify-center items-center gap-2">
+            <div class="dropdown dropdown-hover dropdown-left dropdown-bottom">
+              <div tabindex="0" role="button" class="m-1">
+                <div class="avatar">
+                  <div
+                    class="ring-primary ring-offset-base-100 w-12 rounded-full ring ring-offset-2"
+                  >
+                    <img src="./images/afsar.jpg" />
+                  </div>
+                </div>
+              </div>
+              <ul
+                tabindex="0"
+                class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+              >
+                <li><a class="font-bold text-lg">Afsar Hossain</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </body>
 </html>
