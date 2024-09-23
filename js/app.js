@@ -104,3 +104,9 @@ function calculateDonation(donateMoney, newAmount, myTotalMoney, myMoney, donate
     myTotalMoney.innerText = myMoney;
     donateMoneyInputField.value = '';
 }
+
+
+// Get Donate Title
+function getDonateTtile(donateMoneyBtn) {
+    return donateMoneyBtn.parentNode.parentNode.children[1].innerText;
+}
