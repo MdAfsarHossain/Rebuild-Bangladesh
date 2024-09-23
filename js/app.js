@@ -50,3 +50,18 @@ historyBtn.addEventListener('click', () => {
     historyCardContainer.classList.remove('hidden');
   
 });
+
+
+// Input Field Validation functionality
+function inputFieldValidation(amount, amountString) {
+    
+    if(amount < 0) {
+        return false;
+    }
+    
+    let isValidNumber = !isNaN(Number(amountString)) && amountString.trim() !== '';
+    if(isValidNumber) {
+        return true;
+    }
+    return false;
+}
