@@ -110,3 +110,10 @@ function calculateDonation(donateMoney, newAmount, myTotalMoney, myMoney, donate
 function getDonateTtile(donateMoneyBtn) {
     return donateMoneyBtn.parentNode.parentNode.children[1].innerText;
 }
+
+
+// Calculate new Amount
+function calculateNewAmount(amount, donateMoney) {
+    const currentDonateAmount = parseFloat(donateMoney.innerText);
+    return amount + currentDonateAmount;
+}
