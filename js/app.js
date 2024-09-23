@@ -29,3 +29,13 @@ function buttonClassesAddRemove(addButton, removeButton) {
     removeButton.classList.remove('bg-[#B4F461]', 'text-black');
     removeButton.classList.add('text-gray-600', 'border-2');
 }
+
+
+// Donation button
+donationBtn.addEventListener('click', () => {
+      
+    buttonClassesAddRemove(donationBtn, historyBtn);
+    donationCardContainer.classList.remove('hidden');
+    historyCardContainer.classList.add('hidden');
+    historyCardContainer.classList.remove('flex');
+});
