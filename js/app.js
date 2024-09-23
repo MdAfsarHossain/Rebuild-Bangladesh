@@ -74,3 +74,25 @@ function moneyValidation(amount, myMoney){
      }
     return true; 
 }
+
+
+// Update History card 
+function updateHistory(amount, donateTitle) {
+
+    const currentDate = new Date();
+    const formattedDate = currentDate.toString();
+    // new Date().toLocaleDateString()
+
+    const div = document.createElement('div');
+    div.classList.add('flex', 'flex-col', 'rounded-lg', 'border-2', 'p-7', 'gap-3');
+    div.innerHTML = `
+    <h1 class="font-bold text-black">
+        <span>${amount}</span> Taka is ${donateTitle}
+    </h1>
+    <p class="text-gray-600">
+        Date : ${formattedDate}
+    </p>
+    `;
+
+    historyCardContainer.appendChild(div);
+}
