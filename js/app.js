@@ -96,3 +96,11 @@ function updateHistory(amount, donateTitle) {
 
     historyCardContainer.appendChild(div);
 }
+
+
+// Calculate Donation and Update Money
+function calculateDonation(donateMoney, newAmount, myTotalMoney, myMoney, donateMoneyInputField) {
+    donateMoney.innerText = newAmount;
+    myTotalMoney.innerText = myMoney;
+    donateMoneyInputField.value = '';
+}
