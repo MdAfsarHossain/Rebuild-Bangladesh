@@ -21,6 +21,13 @@ const donateMoneyInputField3 = document.getElementById('donateMoneyInput3');
 const donateMoneyBtn3 = document.getElementById('donateMoneyButton3');
 
 
+// Invalid Amount modal
+const invalidAmountModal = document.getElementById('invalidAmount');
+
+// Insufficient Amount Modal
+const insufficientAmountModal = document.getElementById('insufficientModal');
+
+
 // Add and remove buttons classes functionality
 function buttonClassesAddRemove(addButton, removeButton) {
     addButton.classList.add('bg-[#B4F461]', 'text-black');
@@ -126,12 +133,14 @@ donateMoneyBtn1.addEventListener('click', () => {
     let myMoney = parseFloat(myTotalMoney.innerText);
 
     if(!inputFieldValidation(amount, amountString)) {
-        alert('Please enter a valid amount');
+        // alert('Please enter a valid amount');
+        invalidAmountModal.showModal();
         return;
     }
 
     if(!moneyValidation(amount, myMoney)) {
-        alert('Insufficient funds');
+        // alert('Insufficient funds');
+        insufficientAmountModal.showModal();
         return;
     }
 
@@ -155,12 +164,14 @@ donateMoneyBtn2.addEventListener('click', () => {
     let myMoney = parseFloat(myTotalMoney.innerText);
 
     if(!inputFieldValidation(amount, amountString)) {
-        alert('Please enter a valid amount');
+        // alert('Please enter a valid amount');
+        invalidAmountModal.showModal();
         return;
     }
 
     if(!moneyValidation(amount, myMoney)) {
-        alert('Insufficient funds');
+        // alert('Insufficient funds');
+        insufficientAmountModal.showModal();
         return;
     }
 
@@ -184,12 +195,14 @@ donateMoneyBtn3.addEventListener('click', () => {
     let myMoney = parseFloat(myTotalMoney.innerText);
 
     if(!inputFieldValidation(amount, amountString)) {
-        alert('Please enter a valid amount');
+        // alert('Please enter a valid amount');
+        invalidAmountModal.showModal();
         return;
     }
 
     if(!moneyValidation(amount, myMoney)) {
-        alert('Insufficient funds');
+        // alert('Insufficient funds');
+        insufficientAmountModal.showModal();
         return;
     }
 
