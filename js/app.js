@@ -94,7 +94,7 @@ function updateHistory(amount, donateTitle) {
     div.classList.add('flex', 'flex-col', 'rounded-lg', 'border-2', 'p-7', 'gap-3');
     div.innerHTML = `
     <h1 class="font-bold text-black">
-        <span>${amount}</span> Taka is ${donateTitle}
+        <span>${amount.toFixed(2)}</span> Taka is ${donateTitle}
     </h1>
     <p class="text-gray-600">
         Date : ${formattedDate}
@@ -107,8 +107,8 @@ function updateHistory(amount, donateTitle) {
 
 // Calculate Donation and Update Money
 function calculateDonation(donateMoney, newAmount, myTotalMoney, myMoney, donateMoneyInputField) {
-    donateMoney.innerText = newAmount;
-    myTotalMoney.innerText = myMoney;
+    donateMoney.innerText = newAmount.toFixed(2);
+    myTotalMoney.innerText = myMoney.toFixed(2);
     donateMoneyInputField.value = '';
 }
 
