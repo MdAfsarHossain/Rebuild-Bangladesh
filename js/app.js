@@ -62,7 +62,7 @@ historyBtn.addEventListener('click', () => {
 // Input Field Validation functionality
 function inputFieldValidation(amount, amountString) {
     
-    if(amount < 0) {
+    if(amount <= 0) {
         return false;
     }
     
