@@ -31,9 +31,9 @@
   </head>
   <body>
     <!-- Header  -->
-    <header class="fixed w-full shadow-md">
+    <header class="sticky top-0 w-full shadow-md">
       <!-- Navbar -->
-      <div class="bg-[#F9F7F3] py-5">
+      <div class="bg-[#F9F7F3] py-5 bg-opacity-70 backdrop-blur-lg">
         <nav class="flex flex-row justify-between items-center px-10">
           <!-- Start -->
           <a
@@ -63,7 +63,7 @@
 
       <!-- Button -->
       <div
-        class="border-b-0 bg-white btn-container flex flex-row justify-center items-center py-5 mb-0 gap-10"
+        class="border-b-0 backdrop-blur-lg bg-opacity-80 btn-container flex flex-row justify-center items-center py-5 mb-0 gap-10"
       >
         <button
           id="donationBtn"
@@ -81,7 +81,7 @@
     </header>
 
     <!-- Main -->
-    <main class="py-60">
+    <main class="py-20">
       <!-- Donation Section -->
       <section class="mb-0">
         <!-- Donation Cards Containers -->
@@ -288,7 +288,7 @@
         <!-- History Cards Container -->
         <div
           id="historyCardContainer"
-          class="px-5 lg:px-16 flex-col gap-5 hidden"
+          class="h-screen px-5 lg:px-16 flex-col gap-5 hidden"
         ></div>
       </section>
     </main>
